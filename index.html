@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Yoga</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/buddha.jpg.jpg');
+    }
+
+    .left img {
+        width: 114px;
+        /* filter: invert(100%);(used to change black color to white and vice versa for logo) */
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        /* top: 20px; */
+        /* left: 34px; */
+        font-family: fantasy;
+        font-size: larger;
+    }
+
+    .mid {
+        display: block;
+        width: 51%;
+        margin: -85px auto;
+        font-family: fantasy;
+        font-size: larger;
+        /* border: 2px solid green ; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        display: inline-block;
+        font-family: fantasy;
+        font-size: larger;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 34px 23px;
+        font-size: larger;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: slategray;
+    }
+
+    .navbar li a:active {
+        text-decoration: none;
+        color: rgb(138, 132, 132);
+    }
+
+    .call {
+        cursor: pointer;
+    }
+
+    .call a:hover {
+        color: slategray;
+    }
+
+    .box {
+        background-color: rgb(195, 204, 233);
+        display: inline-block;
+        border: 2px solid blueviolet;
+        margin: 2px;
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+
+    }
+
+    .para {
+        margin: 200px 24px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: inherit;
+        font-size: 1cm;
+        color: crimson;
+    }
+
+    .container {
+        border: 2px solid blueviolet;
+        margin: -138px 40px;
+        padding: 18px;
+        width: 33%;
+        border-radius: 10px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 0px;
+        border: 2px solid black;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 6px;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left side for logo -->
+        <div class="left">
+            <img src="img/logo.jpg.png" alt="">
+            <div>SAKSHI YOGA CLASSES</div>
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">About us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- right for call us -->
+        <div class="right">
+            <div class="call">call us:3456780231</div>
+        </div>
+        <div class="box">Chat with us</div>
+    </header>
+    <p class="para">Power yoga and meditation for beginner's </p>
+    <div class="container">
+        <h2>Let's join and "CAlM YOUR MIND"!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your mobile number">
+            </div>
+            <!-- <button class="btn">SUBMIT</button> -->
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </form>
+    </div>
+</body>
+
+</html>
